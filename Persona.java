@@ -1,48 +1,67 @@
-public class persona {
-    
-    //atributos
-    String nombre;
-    String ine;
-    String direccion;
 
-    //contructor
-    public Persona(String nombre, String ine, String direccion) {
-        this.nombre = nombre;
-        this.ine = ine;
-        this.direccion = direccion;
-    }
-    
-    // Get
+public class Persona {
+	
+	private String nombre;
+	private int edad;
+	private String sexo;
+	private double peso;
+	private double altura;
+	
+	public Persona(String nombre, int edad, String sexo, double peso, double altura) {
+		super();
+		this.nombre = nombre;
+		this.edad = edad;
+		this.sexo = sexo;
+		this.peso = peso;
+		this.altura = altura;
+	}
 
-    public String getNombre() {
-        return nombre;
-    }
+	public String getNombre() {
+		return nombre;
+	}
 
-    public String getIne() {
-        return ine;
-    }
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
-    public String getDireccion() {
-        return direccion;
-    }
-    //Set
+	public int getEdad() {
+		return edad;
+	}
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
 
-    public void setIne(String ine) {
-        this.ine = ine;
-    }
+	public String getSexo() {
+		return sexo;
+	}
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-    
-    //Mostrar datos
-    
-    public void datos(){
-        
-        System.out.println("Tu nombre es:"+nombre+"\nTu direccion es: "+direccion+"\nTu ine es: "+ine+"");
-    }
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", peso=" + peso + ", altura="
+				+ altura + "]";
+	}
+		
+	
+	
 }
