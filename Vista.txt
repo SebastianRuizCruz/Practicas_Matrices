@@ -1,0 +1,250 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete  registrovehiculos ;
+
+import  java.util.ArrayList ;
+
+/ **
+ * *
+ * /
+ Vista de clase  pública extiende javax.swing . JFrame {  
+
+    / **
+     * Crea una nueva forma de Vista
+     * /
+    ArrayList < Vehiculo > lista = new  ArrayList < Vehiculo > ();
+     Vista pública () {
+        initComponents ();
+    }
+
+    / **
+     * Este método se llama desde el constructor para inicializar el formulario.
+     * ADVERTENCIA: NO modifique este código. El contenido de este método es siempre
+     * regenerado por el Editor de formularios.
+     * /
+    @SuppressWarnings ( " sin marcar " )
+    // <editor-fold defaultstate = "collapsed" desc = "Código generado"> // GEN-BEGIN: initComponents
+    privado  vacío  initComponents () {
+
+        jLabel1 =  new  javax.swing . JLabel ();
+        jLabel2 =  new  javax.swing . JLabel ();
+        jLabel3 =  new  javax.swing . JLabel ();
+        jLabel4 =  new  javax.swing . JLabel ();
+        jLabel5 =  new  javax.swing . JLabel ();
+        jLabel6 =  new  javax.swing . JLabel ();
+        txtmedio =  new  javax.swing . JTextField ();
+        txtpasajero =  new  javax.swing . JTextField ();
+        txtpuertas =  new  javax.swing . JTextField ();
+        txtvelocidad =  new  javax.swing . JTextField ();
+        txtllantas =  new  javax.swing . JTextField ();
+        jScrollPane1 =  new  javax.swing . JScrollPane ();
+        JTablevehiculo  =  new  javax.swing . JTable ();
+        btnregistrar =  new  javax.swing . JButton ();
+        jLabel7 =  new  javax.swing . JLabel ();
+        txtvehiculo =  new  javax.swing . JTextField ();
+
+        setDefaultCloseOperation ( javax.swing . WindowConstants . EXIT_ON_CLOSE );
+
+        jLabel1 . setFont ( nueva  fuente java.awt . ( " Lucida Sans Unicode " , 1 , 24 )); // NOI18N
+        jLabel1 . setForeground ( nuevo  color java.awt . ( 0 , 102 , 102 ));
+        jLabel1 . setText ( " REGISTRO DE VEHICULOS " );
+
+        jLabel2 . setText ( " MEDIO POR EL QUE SE TRANSPORTA SU VEHICULO: " );
+
+        jLabel3 . setText ( " NÚMERO DE PASAJEROS: " );
+
+        jLabel4 . setText ( " NÚMERO DE PUERTAS: " );
+
+        jLabel5 . setText ( " VELOCIDAD QUE ALCANZA (KM / H): " );
+
+        jLabel6 . setText ( " CANTIDAD DE LLANTAS: " );
+
+        JTablevehiculo . setModel ( new  javax.swing.table . DefaultTableModel (
+            nuevo  objeto [] [] {
+                { nulo , nulo , nulo , nulo , nulo , nulo },
+                { nulo , nulo , nulo , nulo , nulo , nulo },
+                { nulo , nulo , nulo , nulo , nulo , nulo },
+                { nulo , nulo , nulo , nulo , nulo , nulo }
+            },
+            nueva  Cadena [] {
+                " MEDIO DE VIAJE " , " PASAJEROS " , " PUERTAS " , " KM / H " , " LLANTAS " , " VEHICULO "
+            }
+        ));
+        jScrollPane1 . setViewportView ( JTablevehiculo );
+
+        btnregistrar . setText ( " REGISTRADOR " );
+        btnregistrar . addActionListener ( new  java.awt.event . ActionListener () {
+            public  void  actionPerformed ( java.awt.event . ActionEvent  evt ) {
+                btnregistrarActionPerformed (evt);
+            }
+        });
+
+        jLabel7 . setText ( " VEHICULO QUE ES: " );
+
+        javax.swing . Diseño GroupLayout =  new  javax.swing . GroupLayout (getContentPane ());
+        getContentPane () . setLayout (diseño);
+        diseño . setHorizontalGroup (
+            diseño . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+            .addGroup (layout . createSequentialGroup ()
+                .addContainerGap ()
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addComponent (jScrollPane1, javax.swing . GroupLayout . Alignment . TRAILING )
+                    .addGroup (layout . createSequentialGroup ()
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . TRAILING )
+                            .addComponent (jLabel3)
+                            .addComponent (jLabel2)
+                            .addComponent (jLabel4)
+                            .addComponent (jLabel5)
+                            .addComponent (jLabel6)
+                            .addComponent (jLabel7))
+                        .addGap ( 18 , 18 , 18 )
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING , false )
+                            .addComponent (txtmedio)
+                            .addComponent (txtpasajero)
+                            .addComponent (txtpuertas)
+                            .addComponent (txtvelocidad)
+                            .addComponent (txtllantas)
+                            .addComponent (txtvehiculo, javax.swing . GroupLayout . DEFAULT_SIZE , 108 , Short . MAX_VALUE ))
+                        .addGap ( 65 , 65 , 65 )
+                        .addComponent (btnregistrar)
+                        .addGap ( 0 , 0 , Short . MAX_VALUE )))
+                .addContainerGap ())
+            .addGroup ( javax.swing . GroupLayout . Alignment . TRAILING , layout . createSequentialGroup ()
+                .addContainerGap ( 143 , Short . MAX_VALUE )
+                .addComponent (jLabel1, javax.swing . GroupLayout . PREFERRED_SIZE , 390 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                .addGap ( 95 , 95 , 95 ))
+        );
+        diseño . setVerticalGroup (
+            diseño . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+            .addGroup (layout . createSequentialGroup ()
+                .addGap ( 22 , 22 , 22 )
+                .addComponent (jLabel1, javax.swing . GroupLayout . PREFERRED_SIZE , 35 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                .addGap ( 26 , 26 , 26 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel2)
+                    .addComponent (txtmedio, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addGap ( 18 , 18 , 18 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel3)
+                    .addComponent (txtpasajero, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addGap ( 18 , 18 , 18 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel4)
+                    .addComponent (txtpuertas, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE )
+                    .addComponent (btnregistrar, javax.swing . GroupLayout . PREFERRED_SIZE , 20 , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addGap ( 18 , 18 , 18 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel5)
+                    .addComponent (txtvelocidad, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addGap ( 18 , 18 , 18 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel6)
+                    .addComponent (txtllantas, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addGap ( 18 , 18 , 18 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel7)
+                    .addComponent (txtvehiculo, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . RELATED , 27 , Short . MAX_VALUE )
+                .addComponent (jScrollPane1, javax.swing . GroupLayout . PREFERRED_SIZE , 92 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                .addGap ( 19 , 19 , 19 ))
+        );
+
+        paquete();
+    } // </editor-fold> // GEN-END: initComponents
+
+     nulo  privado btnregistrarActionPerformed ( java.awt.event . ActionEvent  evt ) { // GEN-FIRST: event_btnregistrarActionPerformed
+        
+        Vehiculo vehiculo = nuevo  Vehiculo (txtmedio . GetText (), txtpasajero . GetText (), txtpuertas . GetText (), txtllantas . GetText (), txtvelocidad . GetText (), txtvehiculo . GetText ());
+        lista . agregar (vehiculo);
+        
+        mostrar ();
+        
+        txtmedio . setText ( " " );
+        txtpasajero . setText ( " " );
+        txtpuertas . setText ( " " );
+        txtllantas . setText ( " " );
+        txtvelocidad . setText ( " " );
+        txtvehiculo . setText ( " " );
+        
+        
+    } // GEN-LAST: event_btnregistrarActionPerformed
+          
+       public  void  mostrar () {
+           Cadena matriz [] [] = nueva  Cadena [lista . tamaño ()] [ 6 ];
+           
+           for ( int i =  0 ; i < lista . size (); i ++ ) {
+                matriz [i] [ 0 ] = lista . obtener (i) . getMedio ();
+                matriz [i] [ 1 ] = lista . obtener (i) . getPasaje ();
+                matriz [i] [ 2 ] = lista . obtener (i) . getPuertas ();
+                matriz [i] [ 3 ] = lista . obtener (i) . getVelocidad ();
+                matriz [i] [ 4 ] = lista . obtener (i) . getLlantas ();
+                matriz [i] [ 5 ] = lista . obtener (i) . getVehiculo ();
+                
+                
+           }
+           JTablevehiculo . setModel ( new  javax.swing.table . DefaultTableModel (
+           matriz,
+            nueva  Cadena [] {
+                " MEDIO DE VIAJE " , " PASAJEROS " , " PUERTAS " , " VELOCIDAD " , " LLANTAS " , " VEHICULO "
+            }
+        ));
+
+       }
+       
+    / **
+     * @param argumenta los argumentos de la línea de comando
+     * /
+    public  static  void  main ( String  args []) {
+        / * Establecer el aspecto y la sensación de Nimbus * /
+        // <editor-fold defaultstate = "collapsed" desc = "Código de configuración de aspecto (opcional)">
+        / * Si Nimbus (introducido en Java SE 6) no está disponible, manténgase con el aspecto predeterminado.
+         * Para más detalles, consulte http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * /
+        prueba {
+            for ( javax.swing . UIManager . LookAndFeelInfo info :  javax.swing . UIManager . getInstalledLookAndFeels ()) {
+                if ( " Nimbus " . es igual a (info . getName ())) {
+                    javax.swing . UIManager . setLookAndFeel (info . getClassName ());
+                    romper ;
+                }
+            }
+        } catch ( ClassNotFoundException ex) {
+            java.util.logging . Registrador . getLogger ( Vista . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( InstantiationException ex) {
+            java.util.logging . Registrador . getLogger ( Vista . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( IllegalAccessException ex) {
+            java.util.logging . Registrador . getLogger ( Vista . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( javax.swing . UnsupportedLookAndFeelException ex) {
+            java.util.logging . Registrador . getLogger ( Vista . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        }
+        // </editor-fold>
+
+        / * Crear y mostrar el formulario * /
+        java.awt . EventQueue . invokeLater ( nuevo  Runnable () {
+            public  void  run () {
+                 Vista nueva () . setVisible ( verdadero );
+            }
+        });
+    }
+
+    // Declaración de variables - no modificar // GEN-BEGIN: variables
+     javax.swing  privado . JTable JTablevehiculo ;
+     javax.swing privado . JButton btnregistrar;
+     javax.swing privado . JLabel jLabel1;
+     javax.swing privado . JLabel jLabel2;
+     javax.swing privado . JLabel jLabel3;
+     javax.swing privado . JLabel jLabel4;
+     javax.swing privado . JLabel jLabel5;
+     javax.swing privado . JLabel jLabel6;
+     javax.swing privado . JLabel jLabel7;
+     javax.swing privado . JScrollPane jScrollPane1;
+     javax.swing privado . JTextField txtllantas;
+     javax.swing privado . JTextField txtmedio;
+     javax.swing privado . JTextField txtpasajero;
+     javax.swing privado . JTextField txtpuertas;
+     javax.swing privado . JTextField txtvehiculo;
+     javax.swing privado . JTextField txtvelocidad;
+    // Fin de la declaración de variables // GEN-END: variables
+}

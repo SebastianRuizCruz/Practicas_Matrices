@@ -1,0 +1,74 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete  registrovehiculos ;
+
+/ **
+ * *
+ * /
+ Vehiculo de clase  pública {
+    Cuerda medio, pasaje, puertas, llantas, velocidad, vehiculo;
+
+     Vehiculo público ( String  medio , String  pasaje , String  puertas , String  llantas , String  velocidad , String  vehiculo ) {
+        esta . medio = medio;
+        esta . pasaje = pasaje;
+        esta . puertas = puertas;
+        esta . llantas = llantas;
+        esta . velocidad = velocidad;
+        esta . vehiculo = vehiculo;
+    }
+
+    public  String  getVehiculo () {
+        vehiculo de regreso ;
+    }
+
+    public  void  setVehiculo ( String  vehiculo ) {
+        esta . vehiculo = vehiculo;
+    }
+
+
+    public  String  getMedio () {
+        volver medio;
+    }
+
+    public  void  setMedio ( String  medio ) {
+        esta . medio = medio;
+    }
+
+    public  String  getPasaje () {
+        regreso pasaje;
+    }
+
+    public  void  setPasaje ( String  pasaje ) {
+        esta . pasaje = pasaje;
+    }
+
+    public  String  getPuertas () {
+        volver puertas;
+    }
+
+    public  void  setPuertas ( String  puertas ) {
+        esta . puertas = puertas;
+    }
+
+    public  String  getLlantas () {
+        volver llantas;
+    }
+
+    públicos  vacíos  setLlantas ( Cuerda  Llantas ) {
+        esta . llantas = llantas;
+    }
+
+    public  String  getVelocidad () {
+        volver velocidad;
+    }
+
+    public  void  setVelocidad ( String  velocidad ) {
+        esta . velocidad = velocidad;
+    }
+    
+   
+
+}

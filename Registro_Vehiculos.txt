@@ -1,0 +1,23 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete  registrovehiculos ;
+
+/ **
+ * *
+ * /
+ clase  pública RegistroVehiculos {
+
+    / **
+     * @param argumenta los argumentos de la línea de comando
+     * /
+    public  static  void  main ( String [] args ) {
+        Vista vista = nueva  Vista ();
+            
+           vista . setVisible ( verdadero );
+        
+    }
+    
+}
