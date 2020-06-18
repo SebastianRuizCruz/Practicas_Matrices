@@ -1,0 +1,271 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete  Interfaz ;
+
+import  imci.Calc ;
+
+/ **
+ * *
+* @autor Angel
+ * /
+public  class  Inter  extiende  javax.swing . JFrame {
+
+    / **
+     * Crea un nuevo formulario Inter
+     * /
+     Inter público () {
+        initComponents ();
+        esta . setLocationRelativeTo ( nulo );
+    }
+
+    / **
+     * Este método se llama desde el constructor para inicializar el formulario.
+     * ADVERTENCIA: NO modifique este código. El contenido de este método es siempre
+     * regenerado por el Editor de formularios.
+     * /
+    @SuppressWarnings ( " sin marcar " )
+    // <editor-fold defaultstate = "collapsed" desc = "Código generado"> // GEN-BEGIN: initComponents
+    privado  vacío  initComponents () {
+
+        jLabel1 =  new  javax.swing . JLabel ();
+        jLabel2 =  new  javax.swing . JLabel ();
+        jLabel3 =  new  javax.swing . JLabel ();
+        txtp =  new  javax.swing . JTextField ();
+        txth =  new  javax.swing . JTextField ();
+        bnl =  new  javax.swing . JButton ();
+        bnc =  new  javax.swing . JButton ();
+        txtr =  new  javax.swing . JTextField ();
+        jLabel4 =  new  javax.swing . JLabel ();
+        jLabel5 =  new  javax.swing . JLabel ();
+        jLabel6 =  new  javax.swing . JLabel ();
+        txts =  new  javax.swing . JTextField ();
+        txtn =  new  javax.swing . JTextField ();
+        txte =  new  javax.swing . JTextField ();
+        txtana =  new  javax.swing . JTextField ();
+        jLabel7 =  new  javax.swing . JLabel ();
+        jLabel8 =  nuevo  javax.swing . JLabel ();
+
+        setDefaultCloseOperation ( javax.swing . WindowConstants . EXIT_ON_CLOSE );
+
+        jLabel1 . setFont ( nueva  fuente java.awt . ( " Serif " , 0 , 18 )); // NOI18N
+        jLabel1 . setForeground ( nuevo  color java.awt . ( 204 , 0 , 204 ));
+        jLabel1 . setText ( " CALCULA TU INDICE DE MASA CORPORAL " );
+
+        jLabel2 . setText ( " Ingresa tu peso " );
+
+        jLabel3 . setText ( " Ingresa tu estatura " );
+
+        txtp . addActionListener ( new  java.awt.event . ActionListener () {
+            public  void  actionPerformed ( java.awt.event . ActionEvent  evt ) {
+                txtpActionPerformed (evt);
+            }
+        });
+
+        bnl . setText ( " LIMPIAR " );
+        bnl . addActionListener ( new  java.awt.event . ActionListener () {
+            public  void  actionPerformed ( java.awt.event . ActionEvent  evt ) {
+                bnlActionPerformed (evt);
+            }
+        });
+
+        bnc . setText ( " CALCULAR " );
+        bnc . addActionListener ( new  java.awt.event . ActionListener () {
+            public  void  actionPerformed ( java.awt.event . ActionEvent  evt ) {
+                bncActionPerformed (evt);
+            }
+        });
+
+        jLabel4 . setText ( " Ingresa tu sexo " );
+
+        jLabel5 . setText ( " Ingresa tu nombre " );
+
+        jLabel6 . setText ( " Ingresa tu edad " );
+
+        jLabel7 . setText ( " Tu índice de masa corporal es: " );
+
+        jLabel8 . setText ( " Por lo tanto: " );
+
+        javax.swing . Diseño GroupLayout =  new  javax.swing . GroupLayout (getContentPane ());
+        getContentPane () . setLayout (diseño);
+        diseño . setHorizontalGroup (
+            diseño . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+            .addGroup (layout . createSequentialGroup ()
+                .addGap ( 42 , 42 , 42 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addComponent (jLabel3)
+                    .addComponent (jLabel4)
+                    .addComponent (jLabel5)
+                    .addComponent (jLabel6)
+                    .addComponent (jLabel2))
+                .addGap ( 32 , 32 , 32 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addGroup (layout . createSequentialGroup ()
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . TRAILING )
+                            .addComponent (txtp, javax.swing . GroupLayout . Alignment . LEADING )
+                            .addComponent (txte)
+                            .addComponent (txtn)
+                            .addComponent (txth))
+                        .addGap ( 65 , 65 , 65 )
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING , false )
+                            .addComponent (bnc, javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , Short . MAX_VALUE )
+                            .addComponent (bnl, javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , Short . MAX_VALUE ))
+                        .addGap ( 98 , 98 , 98 ))
+                    .addGroup (layout . createSequentialGroup ()
+                        .addComponent (txts, javax.swing . GroupLayout . PREFERRED_SIZE , 161 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                        .addContainerGap ( javax.swing . GroupLayout . DEFAULT_SIZE , Short . MAX_VALUE ))))
+            .addGroup (layout . createSequentialGroup ()
+                .addGap ( 51 , 51 , 51 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addGroup (layout . createSequentialGroup ()
+                        .addComponent (jLabel7)
+                        .addGap ( 18 , 18 , 18 )
+                        .addComponent (txtr, javax.swing . GroupLayout . PREFERRED_SIZE , 186 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                        .addContainerGap ( javax.swing . GroupLayout . DEFAULT_SIZE , Short . MAX_VALUE ))
+                    .addGroup (layout . createSequentialGroup ()
+                        .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . RELATED , 58 , Short . MAX_VALUE )
+                        .addComponent (jLabel8)
+                        .addGap ( 26 , 26 , 26 )
+                        .addComponent (txtana, javax.swing . GroupLayout . PREFERRED_SIZE , 333 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                        .addGap ( 49 , 49 , 49 ))))
+            .addGroup (layout . createSequentialGroup ()
+                .addGap ( 84 , 84 , 84 )
+                .addComponent (jLabel1, javax.swing . GroupLayout . PREFERRED_SIZE , 432 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                .addGap ( 0 , 0 , Corto . MAX_VALUE ))
+        );
+        diseño . setVerticalGroup (
+            diseño . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+            .addGroup (layout . createSequentialGroup ()
+                .addGap ( 21 , 21 , 21 )
+                .addComponent (jLabel1, javax.swing . GroupLayout . PREFERRED_SIZE , 32 , javax.swing . GroupLayout . PREFERRED_SIZE )
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . UNRELATED )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel4)
+                    .addComponent (txts, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . UNRELATED )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addGroup (layout . createSequentialGroup ()
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                            .addComponent (jLabel5)
+                            .addComponent (txtn, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                        .addGap ( 9 , 9 , 9 )
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                            .addComponent (jLabel6)
+                            .addComponent (txte, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                        .addGap ( 20 , 20 , 20 ))
+                    .addGroup ( javax.swing . GroupLayout . Alignment . TRAILING , layout . createSequentialGroup ()
+                        .addComponent (bnl)
+                        .addGap ( 36 , 36 , 36 )))
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addComponent (jLabel2)
+                    .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                        .addComponent (txtp, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE )
+                        .addComponent (bnc)))
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . UNRELATED )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel3)
+                    .addComponent (txth, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . RELATED , 74 , Short . MAX_VALUE )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (txtr, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE )
+                    .addComponent (jLabel7))
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . UNRELATED )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (txtana, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE )
+                    .addComponent (jLabel8))
+                .addGap ( 44 , 44 , 44 ))
+        );
+
+        paquete();
+    } // </editor-fold> // GEN-END: initComponents
+
+     nulo  privado txtpActionPerformed ( java.awt.event . ActionEvent  evt ) { // GEN-FIRST: event_txtpActionPerformed
+        // TODO agregue su código de manejo aquí:
+    } // GEN-LAST: event_txtpActionPerformed
+
+    Private  void  bncActionPerformed ( java.awt.event . ActionEvent  evt ) { // GEN-FIRST: event_bncActionPerformed
+        doble n1, n2;
+        n1 = doble . parseDouble (txtp . getText ());
+         n2 = doble . parseDouble (txth . getText ());
+       Calc c = nueva  Calc (n1, n2);
+       if (c . calcular () <  18.5 ) {
+            txtana . setText ( " Tu peso es bajo preocupate mas por alimentarte y duerme bien " );
+			
+		}
+		más  si (c . calcular () > =  18.5  && c . calcular () <= 25 ) {
+			txtana . setText ( " Estas en tu peso ideal continua cuidandote " );
+		}
+		más  si (c . calcular () > 25 ) {
+			txtana . setText ( " Tienes sobrepeso cuida mas tu alimentacion " );
+		}
+       txtr . setText ( String . valueOf (c . calcular ()));
+    } // GEN-LAST: event_bncActionPerformed
+
+     nulo  privado bnlActionPerformed ( java.awt.event . ActionEvent  evt ) { // GEN-FIRST: event_bnlActionPerformed
+        txtp . setText ( " " );
+         txth . setText ( " " );
+          txtr . setText ( " " );
+          txtn . setText ( " " );
+          txts . setText ( " " );
+          txte . setText ( " " );
+          txtana . setText ( " " );
+          
+    } // GEN-LAST: event_bnlActionPerformed
+
+    / **
+     * @param argumenta los argumentos de la línea de comando
+     * /
+    public  static  void  main ( String  args []) {
+        / * Establecer el aspecto y la sensación de Nimbus * /
+        // <editor-fold defaultstate = "collapsed" desc = "Código de configuración de aspecto (opcional)">
+        / * Si Nimbus (introducido en Java SE 6) no está disponible, manténgase con el aspecto predeterminado.
+         * Para más detalles, consulte http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * /
+        prueba {
+            for ( javax.swing . UIManager . LookAndFeelInfo info :  javax.swing . UIManager . getInstalledLookAndFeels ()) {
+                if ( " Nimbus " . es igual a (info . getName ())) {
+                    javax.swing . UIManager . setLookAndFeel (info . getClassName ());
+                    romper ;
+                }
+            }
+        } catch ( ClassNotFoundException ex) {
+            java.util.logging . Registrador . getLogger ( Inter . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( InstantiationException ex) {
+            java.util.logging . Registrador . getLogger ( Inter . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( IllegalAccessException ex) {
+            java.util.logging . Registrador . getLogger ( Inter . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( javax.swing . UnsupportedLookAndFeelException ex) {
+            java.util.logging . Registrador . getLogger ( Inter . class . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        }
+        // </editor-fold>
+
+        / * Crear y mostrar el formulario * /
+        java.awt . EventQueue . invokeLater ( nuevo  Runnable () {
+            public  void  run () {
+                nuevo  Inter () . setVisible ( verdadero );
+            }
+        });
+    }
+
+    // Declaración de variables - no modificar // GEN-BEGIN: variables
+     javax.swing privado . JButton bnc;
+     javax.swing privado . JButton bnl;
+     javax.swing privado . JLabel jLabel1;
+     javax.swing privado . JLabel jLabel2;
+     javax.swing privado . JLabel jLabel3;
+     javax.swing privado . JLabel jLabel4;
+     javax.swing privado . JLabel jLabel5;
+     javax.swing privado . JLabel jLabel6;
+     javax.swing privado . JLabel jLabel7;
+     javax.swing privado . JLabel jLabel8;
+     javax.swing privado . JTextField txtana;
+     javax.swing privado . JTextField txte;
+     javax.swing privado . JTextField txth;
+     javax.swing privado . JTextField txtn;
+     javax.swing privado . JTextField txtp;
+     javax.swing privado . JTextField txtr;
+     javax.swing privado . JTextField txts;
+    // Fin de la declaración de variables // GEN-END: variables
+}

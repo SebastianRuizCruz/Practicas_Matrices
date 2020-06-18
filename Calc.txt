@@ -1,0 +1,42 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete  imci ;
+
+/ **
+ * *
+* @autor Angel
+ * /
+ clase  pública Calc {
+    doble peso;
+    doble altura;
+      Cadena privada nombre;
+	privado  int edad;
+	 Cadena privada sexo;
+     Calc pública ( doble  peso , doble  altura ) {
+        esta . peso = peso;
+        esta . altura = altura;
+        
+    }
+    public  double  calcular () {
+        return getPeso () / (getAltura () * getAltura ());
+    }
+    public  double  getPeso () {
+        devolver peso;
+    }
+
+    público  vacío  setPeso ( doble  peso ) {
+        esta . peso = peso;
+    }
+
+    public  double  getAltura () {
+        volver altura;
+    }
+
+    public  void  setAltura ( doble  altura ) {
+        esta . altura = altura;
+    }
+    
+}
