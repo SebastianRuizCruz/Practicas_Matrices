@@ -1,0 +1,200 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete de  vocales ;
+
+import  com.sun.glass.events.KeyEvent ;
+import  javax.swing.JOptionPane ;
+
+/ **
+ * *
+* @autor Angel
+ * /
+ Contador de clase  pública extiende javax.swing . JFrame {  
+
+    / **
+     * Crea nueva forma Contador
+     * /
+    Vocales de cuerda = " " ;
+    int cantVocales;
+     Contador público () {
+        initComponents ();
+    }
+
+    / **
+     * Este método se llama desde el constructor para inicializar el formulario.
+     * ADVERTENCIA: NO modifique este código. El contenido de este método es siempre
+     * regenerado por el Editor de formularios.
+     * /
+    @SuppressWarnings ( " sin marcar " )
+    // <editor-fold defaultstate = "collapsed" desc = "Código generado"> // GEN-BEGIN: initComponents
+    privado  vacío  initComponents () {
+
+        jLabel1 =  new  javax.swing . JLabel ();
+        txtEntrada =  new  javax.swing . JTextField ();
+        jLabel2 =  new  javax.swing . JLabel ();
+        txtSalida =  new  javax.swing . JTextField ();
+        jLabel3 =  new  javax.swing . JLabel ();
+        lblNumero =  new  javax.swing . JLabel ();
+
+        setDefaultCloseOperation ( javax.swing . WindowConstants . EXIT_ON_CLOSE );
+
+        jLabel1 . setText ( " Ingrese palabra o frases " );
+
+        txtEntrada . addActionListener ( new  java.awt.event . ActionListener () {
+            public  void  actionPerformed ( java.awt.event . ActionEvent  evt ) {
+                txtEntradaActionPerformed (evt);
+            }
+        });
+        txtEntrada . addKeyListener ( new  java.awt.event . KeyAdapter () {
+            public  void  keyPressed ( java.awt.event . KeyEvent  evt ) {
+                txtEntradaKeyPressed (evt);
+            }
+            public  void  keyReleased ( java.awt.event . KeyEvent  evt ) {
+                txtEntradaKeyReleased (evt);
+            }
+        });
+
+        jLabel2 . setText ( " Vocales dentro de lo ingresado: " );
+
+        jLabel3 . setFont ( nueva  fuente java.awt . ( " Palatino Linotype " , 1 , 18 )); // NOI18N
+        jLabel3 . setText ( " CONTADOR DE VOCALES DE UNA PALABRA O FRASE " );
+
+        lblNumero . setText ( " Numero de vocales: 0 " );
+
+        javax.swing . Diseño GroupLayout =  new  javax.swing . GroupLayout (getContentPane ());
+        getContentPane () . setLayout (diseño);
+        diseño . setHorizontalGroup (
+            diseño . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+            .addGroup (layout . createSequentialGroup ()
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+                    .addGroup (layout . createSequentialGroup ()
+                        .addContainerGap ()
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . TRAILING )
+                            .addComponent (jLabel1)
+                            .addComponent (jLabel2))
+                        .addGap ( 48 , 48 , 48 )
+                        .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING , false )
+                            .addComponent (txtSalida, javax.swing . GroupLayout . DEFAULT_SIZE , 164 , Short . MAX_VALUE )
+                            .addComponent (txtEntrada)))
+                    .addGroup (layout . createSequentialGroup ()
+                        .addGap ( 83 , 83 , 83 )
+                        .addComponent (jLabel3))
+                    .addGroup (layout . createSequentialGroup ()
+                        .addGap ( 98 , 98 , 98 )
+                        .addComponent (lblNumero)))
+                .addContainerGap ( javax.swing . GroupLayout . DEFAULT_SIZE , Short . MAX_VALUE ))
+        );
+        diseño . setVerticalGroup (
+            diseño . createParallelGroup ( javax.swing . GroupLayout . Alignment . LEADING )
+            .addGroup (layout . createSequentialGroup ()
+                .addGap ( 36 , 36 , 36 )
+                .addComponent (jLabel3)
+                .addGap ( 43 , 43 , 43 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel1)
+                    .addComponent (txtEntrada, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addGap ( 60 , 60 , 60 )
+                .addGroup (layout . createParallelGroup ( javax.swing . GroupLayout . Alignment . BASELINE )
+                    .addComponent (jLabel2)
+                    .addComponent (txtSalida, javax.swing . GroupLayout . PREFERRED_SIZE , javax.swing . GroupLayout . DEFAULT_SIZE , javax.swing . GroupLayout . PREFERRED_SIZE ))
+                .addPreferredGap ( javax.swing . LayoutStyle . ComponentPlacement . RELATED , 64 , Short . MAX_VALUE )
+                .addComponent (lblNumero)
+                .addGap ( 36 , 36 , 36 ))
+        );
+
+        paquete();
+    } // </editor-fold> // GEN-END: initComponents
+
+     nulo  privado txtEntradaActionPerformed ( java.awt.event . ActionEvent  evt ) { // GEN-FIRST: event_txtEntradaActionPerformed
+        // TODO agregue su código de manejo aquí:
+    } // GEN-LAST: event_txtEntradaActionPerformed
+
+     nulo  privado txtEntradaKeyPressed ( java.awt.event . KeyEvent  evt ) { // GEN-FIRST: event_txtEntradaKeyPressed
+        switch (evt . getKeyCode ()) {
+            caso  KeyEvent . VK_A :
+                vocales + = " a " ;
+                cantVocales ++ ;
+                romper ;
+                caso  KeyEvent . VK_E :
+                vocales + = " e " ;
+                cantVocales ++ ;
+                romper ;
+                caso  KeyEvent . VK_I :
+                vocales + = " i " ;
+                cantVocales ++ ;
+                romper ;
+                caso  KeyEvent . VK_O :
+                vocales + = " o " ;
+                cantVocales ++ ;
+                romper ;
+                caso  KeyEvent . VK_U :
+                vocales + = " u " ;
+                cantVocales ++ ;
+                romper ;
+                
+        }
+        
+        txtSalida . setText (vocales);
+        lblNumero . setText ( " Numero de vocales de lo complicadas son: " + cantVocales);
+    } // GEN-LAST: event_txtEntradaKeyPressed
+
+     nulo  privado txtEntradaKeyReleased ( java.awt.event . KeyEvent  evt ) { // GEN-FIRST: event_txtEntradaKeyReleased
+       if (evt . getKeyCode () == KeyEvent . VK_ESCAPE ) {
+           int respuesta;
+           respuesta = JOptionPane . showConfirmDialog (rootPane, " Desea salir de la aplicación " , " Confirmación " ,
+                   JOptionPane . YES_NO_OPTION , JOptionPane . PREGUNTA_ MENSAJE );
+           if (respuesta == JOptionPane . YES_OPTION ) {
+               Sistema . salida ( 0 );
+           }
+           
+           
+       }
+    } // GEN-LAST: event_txtEntradaKeyReleased
+
+    / **
+     * @param argumenta los argumentos de la línea de comando
+     * /
+    public  static  void  main ( String  args []) {
+        / * Establecer el aspecto y la sensación de Nimbus * /
+        // <editor-fold defaultstate = "collapsed" desc = "Código de configuración de aspecto (opcional)">
+        / * Si Nimbus (introducido en Java SE 6) no está disponible, quédese con el aspecto predeterminado.
+         * Para más detalles, consulte http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * /
+        prueba {
+            for ( javax.swing . UIManager . LookAndFeelInfo info :  javax.swing . UIManager . getInstalledLookAndFeels ()) {
+                if ( " Nimbus " . es igual a (info . getName ())) {
+                    javax.swing . UIManager . setLookAndFeel (info . getClassName ());
+                    romper ;
+                }
+            }
+        } catch ( ClassNotFoundException ex) {
+            java.util.logging . Registrador . getLogger ( Contador . clase . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( InstantiationException ex) {
+            java.util.logging . Registrador . getLogger ( Contador . clase . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( IllegalAccessException ex) {
+            java.util.logging . Registrador . getLogger ( Contador . clase . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        } catch ( javax.swing . UnsupportedLookAndFeelException ex) {
+            java.util.logging . Registrador . getLogger ( Contador . clase . getName ()) . log ( java.util.logging . Level . SEVERE , null , ex);
+        }
+        // </editor-fold>
+
+        / * Crear y mostrar el formulario * /
+        java.awt . EventQueue . invokeLater ( nuevo  Runnable () {
+            public  void  run () {
+                nuevo  Contador () . setVisible ( verdadero );
+            }
+        });
+    }
+
+    // Declaración de variables - no modificar // GEN-BEGIN: variables
+     javax.swing privado . JLabel jLabel1;
+     javax.swing privado . JLabel jLabel2;
+     javax.swing privado . JLabel jLabel3;
+     javax.swing privado . JLabel lblNumero;
+     javax.swing privado . JTextField txtEntrada;
+     javax.swing privado . JTextField txtSalida;
+    // Fin de la declaración de variables // GEN-END: variables
+}

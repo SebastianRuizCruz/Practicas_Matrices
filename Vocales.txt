@@ -1,0 +1,23 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete de  vocales ;
+
+/ **
+ * *
+* @autor Angel
+ * /
+ Vocales de clase  pública {
+
+    / **
+     * @param argumenta los argumentos de la línea de comando
+     * /
+    public  static  void  main ( String [] args ) {
+       Contador vista = nuevo  Contador ();
+            
+           vista . setVisible ( verdadero );
+    }
+    
+}

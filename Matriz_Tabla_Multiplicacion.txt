@@ -1,0 +1,29 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija Encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, elija Herramientas | Plantillas
+ * y abra la plantilla en el editor.
+ * /
+paquete  multiplicacionmatriz ;
+
+/ **
+ * *
+* @autor Angel
+ * /
+ clase  pública MultiplicacionMatriz {
+
+    / **
+     * @param argumenta los argumentos de la línea de comando
+     * /
+    public  static  void  main ( String [] args ) {
+        int filas, columnas, total;
+        Sistema . a cabo . println ( " ********************* MATRIZ TABLA DE MULTIPLICAR ***************** **** \ n " );
+        para (filas = 1 ; filas <= 10 ; filas ++ ) {
+            para (columnas = 1 ; columnas <= 10 ; columnas ++ ) {
+                 total = filas * columnas;
+                 Sistema . a cabo . printf ( " \ t " + total);
+            }
+            Sistema . a cabo . println ( " \ n " );
+        }
+    }
+    
+}
